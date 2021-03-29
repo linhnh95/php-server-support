@@ -28,11 +28,11 @@ class SupportProvider
                     $requestName = 'X-Request-Id';
                 }
             } else {
-                new InvalidRequestException('Request Id không hợp lệ', 400);
+                throw new InvalidRequestException('Request Id không hợp lệ', 400);
             }
         }
         if (!$validator->isRequestValid($requestName)) {
-            new InvalidRequestException('Request Id không hợp lệ', 400);
+            throw new InvalidRequestException('Request Id không hợp lệ', 400);
         }
         $allHeaders = getallheaders();
         $value = $allHeaders[$requestName];

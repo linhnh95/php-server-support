@@ -4,21 +4,22 @@
 namespace Linhnh95\PhpServerSupport\Exceptions;
 
 
-class InvalidRequestException
+class InvalidRequestException extends \InvalidArgumentException
 {
+    protected $code;
+    protected $message = '';
+
     /**
      * InvalidRequestException constructor.
-     *
      * @param null $message
+     *
      * @param int $code
      */
     public function __construct($message = null, $code = 400)
     {
-        $msg = $message !== null ? $message : 'Bad Request';
-        if (class_exists('Artisan')) {
-            abort($code, $msg);
-        }else{
-            throw new \InvalidArgumentException($msg, $code);
-        }
+        $this->code = $code;
+        $this->message = $message ?: 'Bad Request';
+
+        parent::__construct($message, $code);
     }
 }
