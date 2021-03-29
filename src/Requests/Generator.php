@@ -7,12 +7,11 @@ namespace Linhnh95\PhpServerSupport\Requests;
 class Generator
 {
     /**
-     * @param $requestName
+     * @return string
      */
-    public static function generateRequestId($requestName)
+    public static function generateRequestId()
     {
-        $requestValue = time() . uniqid();
-        header($requestName . ': ' . $requestValue);
+        return time() . uniqid();
     }
 
     /**
