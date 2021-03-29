@@ -1,0 +1,31 @@
+{
+  "name": "linhnh95/php-server-support",
+  "type": "library",
+  "description": "PHP",
+  "keywords": [
+    "php",
+    "support",
+    "identity"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nguyen Hong Linh",
+      "email": "jd.linhnh95@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "laravel": ">=5.8"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Linhnh95\\PhpServerSupport\\": "src"
+    }
+  },
+  "autoload-dev": {},
+  "config": {
+    "sort-packages": true
+  }
+}
