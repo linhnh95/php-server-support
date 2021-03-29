@@ -9,9 +9,18 @@ class Generator
     /**
      * @param $requestName
      */
-    public function generateRequestId($requestName)
+    public static function generateRequestId($requestName)
     {
         $requestValue = time() . uniqid();
         header($requestName . ': ' . $requestValue);
+    }
+
+    /**
+     * @param $requestName
+     * @param $value
+     */
+    public function assignRequestId($requestName, $value)
+    {
+        header($requestName . ': ' . $value);
     }
 }

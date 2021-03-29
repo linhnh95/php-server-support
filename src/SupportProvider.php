@@ -34,7 +34,8 @@ class SupportProvider
         if (!$validator->isRequestValid($requestName)) {
             new InvalidRequestException('Request Id không hợp lệ', 400);
         }
-        $generator->generateRequestId($requestName);
-        $generator->generateRequestId($requestName);
+        $allHeaders = getallheaders();
+        $value = $allHeaders[$requestName];
+        $generator->assignRequestId($requestName, $value);
     }
 }
