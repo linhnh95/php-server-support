@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Linhnh95\PhpServerSupport\Requests;
+namespace Urbox\XRequestId\Requests;
 
 
 class Generator

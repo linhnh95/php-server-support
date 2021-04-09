@@ -20,7 +20,7 @@
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "Linhnh95\\PhpServerSupport\\": "src"
+      "Urbox\\XRequestId\\": "src"
     }
   },
   "autoload-dev": {},

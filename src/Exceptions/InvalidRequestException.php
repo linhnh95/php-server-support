@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Linhnh95\PhpServerSupport\Exceptions;
+namespace Urbox\XRequestId\Exceptions;
 
 
 class InvalidRequestException extends \InvalidArgumentException

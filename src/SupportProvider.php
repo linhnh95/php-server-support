@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Linhnh95\PhpServerSupport;
+namespace Urbox\XRequestId;
 
 
-use Linhnh95\PhpServerSupport\Exceptions\InvalidRequestException;
-use Linhnh95\PhpServerSupport\Requests\Generator;
-use Linhnh95\PhpServerSupport\Requests\Validator;
+use Urbox\XRequestId\Exceptions\InvalidRequestException;
+use Urbox\XRequestId\Requests\Generator;
+use Urbox\XRequestId\Requests\Validator;
 
 class SupportProvider
 {
