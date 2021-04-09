@@ -12,11 +12,11 @@ composer require linhnh95/php-sever-support
 
 ### Config
 
-####I. Laravel, Lumen
+#### I. Laravel, Lumen
 Write the following line of code in the `register` or `boot` function in `app/Providers/AppServiceProvider.php`
 
 
-####II. Other
+#### II. Other
 Write in `index.php`
 
 ```php
